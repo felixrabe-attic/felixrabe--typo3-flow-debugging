@@ -20,10 +20,9 @@ if ($rootPath === FALSE) {
     $rootPath .= '/';
 }
 
-require($rootPath . 'Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Bootstrap.php');
+require($rootPath . 'Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Scripts.php');
 
 $context = getenv('FLOW_CONTEXT') ?: (getenv('REDIRECT_FLOW_CONTEXT') ?: 'Development');
-$bootstrap = new \TYPO3\Flow\Core\Bootstrap($context);
-$bootstrap->run();
+$retVal = \TYPO3\Flow\Core\Booting\Scripts::executeCommand('typo3.flow:core:compile', $settings);
 
 ?>
