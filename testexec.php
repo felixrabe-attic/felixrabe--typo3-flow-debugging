@@ -23,6 +23,7 @@ if ($rootPath === FALSE) {
 require($rootPath . 'Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booting/Scripts.php');
 
 $context = getenv('FLOW_CONTEXT') ?: (getenv('REDIRECT_FLOW_CONTEXT') ?: 'Development');
+$settings = unserialize(file_get_contents('/tmp/settings.ser'));
 $retVal = \TYPO3\Flow\Core\Booting\Scripts::executeCommand('typo3.flow:core:compile', $settings);
 
 ?>
