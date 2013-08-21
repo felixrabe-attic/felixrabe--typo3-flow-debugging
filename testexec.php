@@ -24,6 +24,8 @@ require($rootPath . 'Packages/Framework/TYPO3.Flow/Classes/TYPO3/Flow/Core/Booti
 
 $context = getenv('FLOW_CONTEXT') ?: (getenv('REDIRECT_FLOW_CONTEXT') ?: 'Development');
 $settings = unserialize(file_get_contents('/tmp/settings.ser'));
+// die('good');  // dies
 $retVal = \TYPO3\Flow\Core\Booting\Scripts::executeCommand('typo3.flow:core:compile', $settings);
+die('good');  // does not die
 
 ?>
