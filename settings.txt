@@ -1,0 +1,317 @@
+array (
+  'aop' => 
+  array (
+    'globalObjects' => 
+    array (
+      'securityContext' => 'TYPO3\\Flow\\Security\\Context',
+    ),
+  ),
+  'configuration' => 
+  array (
+    'compileConfigurationFiles' => false,
+  ),
+  'core' => 
+  array (
+    'context' => 'Development',
+    'phpBinaryPathAndFilename' => '/Applications/MAMP/bin/php/php5.4.10/bin/php',
+    'subRequestEnvironmentVariables' => 
+    array (
+      'XDEBUG_CONFIG' => 'idekey=FLOW_SUBREQUEST remote_port=9001',
+    ),
+    'subRequestPhpIniPathAndFilename' => NULL,
+  ),
+  'error' => 
+  array (
+    'exceptionHandler' => 
+    array (
+      'className' => 'TYPO3\\Flow\\Error\\DebugExceptionHandler',
+      'defaultRenderingOptions' => 
+      array (
+        'renderTechnicalDetails' => true,
+      ),
+      'renderingGroups' => 
+      array (
+        'notFoundExceptions' => 
+        array (
+          'matchingStatusCodes' => 
+          array (
+            0 => 404,
+          ),
+          'options' => 
+          array (
+            'templatePathAndFilename' => 'resource://TYPO3.Flow/Private/Templates/Error/Default.html',
+            'variables' => 
+            array (
+              'errorDescription' => 'Sorry, the page you requested was not found.',
+            ),
+          ),
+        ),
+        'databaseConnectionExceptions' => 
+        array (
+          'matchingExceptionClassNames' => 
+          array (
+            0 => 'TYPO3\\Flow\\Persistence\\Doctrine\\DatabaseConnectionException',
+          ),
+          'options' => 
+          array (
+            'templatePathAndFilename' => 'resource://TYPO3.Flow/Private/Templates/Error/Default.html',
+            'variables' => 
+            array (
+              'errorDescription' => 'Sorry, the database connection couldn\'t be established.',
+            ),
+          ),
+        ),
+      ),
+    ),
+    'errorHandler' => 
+    array (
+      'exceptionalErrors' => 
+      array (
+        0 => 256,
+        1 => 4096,
+        2 => 2,
+        3 => 8,
+        4 => 512,
+        5 => 1024,
+        6 => 2048,
+      ),
+    ),
+  ),
+  'http' => 
+  array (
+    'baseUri' => NULL,
+  ),
+  'log' => 
+  array (
+    'systemLogger' => 
+    array (
+      'logger' => 'TYPO3\\Flow\\Log\\Logger',
+      'backend' => 'TYPO3\\Flow\\Log\\Backend\\FileBackend',
+      'backendOptions' => 
+      array (
+        'logFileURL' => '/Users/felixrabe/Sites/eis-flow-mamp/Data/Logs/System_Development.log',
+        'createParentDirectories' => true,
+        'severityThreshold' => 7,
+        'maximumLogFileSize' => 10485760,
+        'logFilesToKeep' => 1,
+        'logMessageOrigin' => false,
+      ),
+    ),
+    'securityLogger' => 
+    array (
+      'backend' => 'TYPO3\\Flow\\Log\\Backend\\FileBackend',
+      'backendOptions' => 
+      array (
+        'logFileURL' => '/Users/felixrabe/Sites/eis-flow-mamp/Data/Logs/Security_Development.log',
+        'createParentDirectories' => true,
+        'severityThreshold' => 7,
+        'maximumLogFileSize' => 10485760,
+        'logFilesToKeep' => 1,
+        'logIpAddress' => true,
+      ),
+    ),
+    'sqlLogger' => 
+    array (
+      'backend' => 'TYPO3\\Flow\\Log\\Backend\\FileBackend',
+      'backendOptions' => 
+      array (
+        'logFileURL' => '/Users/felixrabe/Sites/eis-flow-mamp/Data/Logs/Query_Development.log',
+        'createParentDirectories' => true,
+        'severityThreshold' => 7,
+        'maximumLogFileSize' => 10485760,
+        'logFilesToKeep' => 1,
+      ),
+    ),
+  ),
+  'i18n' => 
+  array (
+    'defaultLocale' => 'en',
+    'fallbackRule' => 
+    array (
+      'strict' => false,
+      'order' => 
+      array (
+      ),
+    ),
+  ),
+  'object' => 
+  array (
+    'registerFunctionalTestClasses' => false,
+    'excludeClasses' => 
+    array (
+      'Doctrine.*' => 
+      array (
+        0 => '.*',
+      ),
+      'doctrine.*' => 
+      array (
+        0 => '.*',
+      ),
+      'symfony.*' => 
+      array (
+        0 => '.*',
+      ),
+      'phpunit.*' => 
+      array (
+        0 => '.*',
+      ),
+      'mikey179.vfsStream' => 
+      array (
+        0 => '.*',
+      ),
+      'Composer.Installers' => 
+      array (
+        0 => '.*',
+      ),
+    ),
+  ),
+  'package' => 
+  array (
+    'inactiveByDefault' => 
+    array (
+      0 => 'Composer.Installers',
+    ),
+  ),
+  'persistence' => 
+  array (
+    'backendOptions' => 
+    array (
+      'driver' => 'pdo_mysql',
+      'host' => '127.0.0.1',
+      'dbname' => NULL,
+      'user' => NULL,
+      'password' => NULL,
+      'charset' => 'utf8',
+    ),
+    'doctrine' => 
+    array (
+      'enable' => true,
+      'sqlLogger' => NULL,
+    ),
+  ),
+  'reflection' => 
+  array (
+    'ignoredTags' => 
+    array (
+      0 => 'api',
+      1 => 'package',
+      2 => 'subpackage',
+      3 => 'license',
+      4 => 'copyright',
+      5 => 'author',
+      6 => 'const',
+      7 => 'see',
+      8 => 'todo',
+      9 => 'scope',
+      10 => 'fixme',
+      11 => 'test',
+      12 => 'expectedException',
+      13 => 'depends',
+      14 => 'dataProvider',
+      15 => 'group',
+      16 => 'codeCoverageIgnore',
+    ),
+    'logIncorrectDocCommentHints' => false,
+  ),
+  'resource' => 
+  array (
+    'publishing' => 
+    array (
+      'detectPackageResourceChanges' => true,
+      'fileSystem' => 
+      array (
+        'mirrorMode' => 'link',
+      ),
+    ),
+  ),
+  'security' => 
+  array (
+    'enable' => true,
+    'firewall' => 
+    array (
+      'rejectAll' => false,
+      'filters' => 
+      array (
+        0 => 
+        array (
+          'patternType' => 'CsrfProtection',
+          'patternValue' => NULL,
+          'interceptor' => 'AccessDeny',
+        ),
+      ),
+    ),
+    'authentication' => 
+    array (
+      'providers' => 
+      array (
+      ),
+      'authenticationStrategy' => 'atLeastOneToken',
+    ),
+    'authorization' => 
+    array (
+      'accessDecisionVoters' => 
+      array (
+        0 => 'TYPO3\\Flow\\Security\\Authorization\\Voter\\Policy',
+      ),
+      'allowAccessIfAllVotersAbstain' => false,
+    ),
+    'csrf' => 
+    array (
+      'csrfStrategy' => 'onePerSession',
+    ),
+    'cryptography' => 
+    array (
+      'hashingStrategies' => 
+      array (
+        'default' => 'bcrypt',
+        'fallback' => 'pbkdf2',
+        'pbkdf2' => 'TYPO3\\Flow\\Security\\Cryptography\\Pbkdf2HashingStrategy',
+        'bcrypt' => 'TYPO3\\Flow\\Security\\Cryptography\\BCryptHashingStrategy',
+        'saltedmd5' => 'TYPO3\\Flow\\Security\\Cryptography\\SaltedMd5HashingStrategy',
+      ),
+      'Pbkdf2HashingStrategy' => 
+      array (
+        'dynamicSaltLength' => 8,
+        'iterationCount' => 10000,
+        'derivedKeyLength' => 64,
+        'algorithm' => 'sha256',
+      ),
+      'BCryptHashingStrategy' => 
+      array (
+        'cost' => 14,
+      ),
+      'RSAWalletServicePHP' => 
+      array (
+        'keystorePath' => '/Users/felixrabe/Sites/eis-flow-mamp/Data/Persistent/RsaWalletData',
+        'openSSLConfiguration' => 
+        array (
+        ),
+      ),
+    ),
+  ),
+  'session' => 
+  array (
+    'inactivityTimeout' => 3600,
+    'name' => 'TYPO3_Flow_Session',
+    'garbageCollection' => 
+    array (
+      'probability' => 30,
+      'maximumPerRun' => 1000,
+    ),
+    'cookie' => 
+    array (
+      'lifetime' => 0,
+      'path' => '/',
+      'secure' => false,
+      'httponly' => true,
+      'domain' => NULL,
+    ),
+  ),
+  'utility' => 
+  array (
+    'environment' => 
+    array (
+      'temporaryDirectoryBase' => '/Users/felixrabe/Sites/eis-flow-mamp/Data/Temporary/',
+    ),
+  ),
+)
